@@ -1,0 +1,287 @@
+body {
+	background-color: white; 
+}
+
+.video {
+	/*grid-area: video;*/
+	justify-self: center;
+}
+
+/*#panel, #flip {
+	padding: 5px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+  }
+  
+#panel {
+	padding: 50px;
+  }
+*/
+
+img {
+	border-radius: 60%;
+  }
+
+
+#vid {
+	height: 100%;
+	width: auto;
+	display: block;
+	margin: auto;
+}
+
+#trailerlala {
+	margin-left: 5cm;
+}
+
+#lalacelebrando {
+	margin-left: 1.4cm;
+}
+
+.one{
+	background-image: url("../Pictures/fundacionlala.png");
+	height: 300px;	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	object-fit: cover;
+}
+
+.container {
+	display: grid;
+	grid-template-areas:
+		  "header"
+		  "video"
+		  "main"
+		  "footer";
+  }
+
+header {
+	grid-area: header;
+}
+
+.main {
+	grid-area: main;
+}
+.bold{
+	font-size: 32px;
+}
+
+.bolded {
+	font-size: 17px;
+	font-style: italic;
+}
+
+nav {
+	display: grid;
+	margin: 1cm;
+	background-color:beige;
+	text-align: center;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Roboto', sans-serif;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+a:link, a:visited {
+	background-color: #2572a6;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+  }
+  
+  a:hover, a:active {
+	background-color: white;
+	color: #2572a6;
+  }
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	color:#2572a6;
+	background-color:white;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.mainimage {
+	background-image: url("../Pictures/fundacionlala.png");	
+	height: 300px;	
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+p {
+	line-height: 1.15cm;
+	margin: 2cm;
+}
+
+.firstgrid {
+
+	display: grid;
+	margin: 3cm;
+	background-color: #f5f5f5;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 50px;
+	align-items: center;
+	margin-bottom: 50px;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+#secondgrid {
+	display: grid;
+	margin: 5cm;
+ 	background-color: #f5f5f5;
+	grid-template-rows: auto;	
+	margin-bottom: 50px;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+/*
+.picture2 {
+	width: 100%;
+	background-image: url("../Pictures/top10.jpeg");
+	height: 300px;	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 250px;
+}
+*/
+
+footer {
+	grid-area: footer;
+	display: grid;
+	text-align: center;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Gallery */
+
+div.gallery {
+	margin: 1cm;
+	border: 1px solid orange;
+	float: left;
+	width: 280px;
+  }
+  
+  div.gallery:hover {
+	border: 1px solid #777;
+  }
+  
+  div.gallery img {
+	width: 100%;
+	height: auto;
+  }
+  
+  div.desc {
+	padding: 1cm;
+	text-align: center;
+  }
+
+ .pictureinfo {
+	 width: 100%;
+	 background-image: url("../Pictures/lalaacademia.png");
+	 height: 300px;	
+	 background-repeat: no-repeat;
+	 background-position: center center;
+	 background-size: auto 250px;
+}
+
+.picturelalasc {
+	width: 100%;
+	background-image: url("../Pictures/logolalafc.jpg");
+	height: 300px;	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 250px;
+}
+
+.gridinfo {
+	display: grid;
+	margin: 4cm;
+	background-color: #f5f5f5;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 50px;
+	align-items: center;
+	margin-bottom: 50px;
+	font-family: 'Slabo 27px', serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+.pictureinfo2 {
+	width: 100%;
+	background-image: url("../Pictures/home6.jpg");
+	height: 300px;	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 250px;
+}
+
+#embedmain2 {
+ grid-column: 1 / span 2;
+ margin-bottom: 1cm;
+ margin-left: 1cm;
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		background-color: lightblue;
+	}
+
+	.firstgrid, #secondgrid {
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	#secondgrid {
+		margin-top: 20px;
+	}
+
+	.embed{
+		width: auto;
+	}
+
+	nav{
+		grid-template-columns: 1fr;
+	}
+
+	.one{
+		height: auto;
+		width: 100%;
+	}
+
+	.gridinfo {
+		margin: auto;
+	}
+
+ #embedmain2 {
+	 width: 50%;
+ }
+	/*.container {
+		display: grid;
+		grid-template-areas:
+		  "header header header"
+		  "nav    nav    nav"
+		  "article article aside"
+		  "footer footer footer";
+  }*/
+}
+
+  @media only screen and (max-width: 600px) {
+	body {
+	  background-color: orange;
+	}
+  }
